@@ -1,0 +1,26 @@
+{
+  "name": "copy-element",
+  "version": "1.0.0",
+  "homepage": "https://KevinMellott91.github.io/copy-element.html",
+  "authors": [
+      { "name": "Kevin Mellott", "homepage": "http://kevinmellott91.github.io"}
+  ],
+  "description": "Copyright display element with configurable date display.",
+  "main": "src/copy-element.html",
+  "keywords": [
+    "web-components",
+    "copy",
+    "copyright"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "platform": "Polymer/platform#^0.4.1"
+  }
+}
