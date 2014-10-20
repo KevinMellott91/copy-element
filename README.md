@@ -47,29 +47,19 @@ Attribute     | Options     | Default         | Description
 
 In order to run it locally you'll need to fetch some dependencies and a basic server setup.
 
-* Install [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/):
+* Install [Bower](http://bower.io/):
 
     ```sh
-    $ [sudo] npm install -g bower grunt-cli
+    $ [sudo] npm install -g bower
     ```
 
 * Install local dependencies:
 
     ```sh
-    $ bower install && npm install
+    $ bower install
     ```
 
-* To test your project, start the development server and open `http://localhost:8000`.
-
-    ```sh
-    $ grunt server
-    ```
-
-* To provide a live demo, send everything to `gh-pages` branch.
-
-    ```sh
-    $ grunt deploy
-    ```
+* To test your project, just launch the index.html page.
 
 ## Contributing
 
