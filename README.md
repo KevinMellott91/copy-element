@@ -45,7 +45,7 @@ Attribute     | Options     | Default         | Description
 
 ## Development
 
-In order to run it locally you'll need to fetch some dependencies and a basic server setup.
+In order to run it locally you'll need to fetch some dependencies and a basic server setup:
 
 * Install [Bower](http://bower.io/):
 
