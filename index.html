@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;copy-element&gt; Test Page</title>
+    <style>
+        copy-element{
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+
+    <!-- Importing Web Component's Polyfill -->
+    <script src="bower_components/platform/platform.js"></script>
+
+    <!-- Importing Custom Elements -->
+    <link rel="import" href="src/copy-element.html">
+</head>
+<body>
+<!-- Should show a range in the copyright statement -->
+<copy-element start-year="2003">Some Great Company</copy-element>
+
+<!-- Should show just the current year copyright statement -->
+<copy-element>Some Great Company</copy-element>
+
+<!-- Should show just the current year copyright statement (assuming that it is still 2014 when you read this) -->
+<copy-element start-year="2014">Some Great Company</copy-element>
+</body>
+</html>

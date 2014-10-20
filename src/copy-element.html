@@ -1,0 +1,30 @@
+<script>
+    (function() {
+        // Creates an object based in the HTML Element prototype
+        var element = Object.create(HTMLElement.prototype);
+
+        // When the element is created, then write the appropriate text to the shadow DOM
+        element.createdCallback = function() {
+            var shadow = this.createShadowRoot();
+            var startYear = this.getAttribute('start-year');
+            var currentYear = new Date().getFullYear();
+
+            // The default is to just show the current year as the date
+            var dateString = currentYear;
+
+            // If a start year was provided, and it is not the same as the current year, then
+            // modify the date string to show both years
+            if(startYear != undefined && startYear != currentYear){
+                dateString = startYear + '-' + currentYear;
+            }
+
+            // Write the proper message to the shadow DOM
+            shadow.innerHTML = '&copy; ' + dateString + ' ' + this.innerHTML;
+        };
+
+        // Register the element with the page
+        document.registerElement('copy-element', {
+            prototype: element
+        });
+    }());
+</script>
